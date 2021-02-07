@@ -1,0 +1,28 @@
+#######################################
+# Syntax Coloring Map For Advance Seven Segment
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+seven	KEYWORD1
+sevenSegment	KEYWORD1
+segmentDisplay	KEYWORD1
+AdvanceSevenSegment	KEYWORD1
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+refresh	KEYWORD2
+setNumber	KEYWORD2
+setCharacter	KEYWORD2
+setDot	KEYWORD2
+setDash	KEYWORD2
+clean	KEYWORD2
+refresh	KEYWORD2
+######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
