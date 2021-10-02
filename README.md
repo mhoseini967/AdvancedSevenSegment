@@ -1,6 +1,8 @@
 # Arduino Advanced Seven Segment library
 this library created for user friendly access to seven segment
 
+![schematic](schematic.png)
+
 Installing this Library
 =====
 
