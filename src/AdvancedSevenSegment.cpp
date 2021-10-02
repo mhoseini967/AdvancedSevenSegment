@@ -62,54 +62,43 @@ void AdvanceSevenSegment::setNumber(int number) {
 }
 
 void AdvanceSevenSegment::setCharacter(char c) {
+    //support UpperCase chars
+    c = tolower(c);
+
     switch (c) {
-        case 'A':
         case 'a':
             print(1, 1, 1, 0, 1, 1, 1);
             break;
-
-        case 'B':
         case 'b':
             print(0,0,1,1,1,1,1);
             break;
-        case 'C':
         case 'c':
             print(1, 0, 0, 1, 1, 1, 0);
             break;
-
-        case 'D':
         case 'd':
             print(0,1,1,1,1,0,1);
             break;
-        case 'E':
         case 'e':
             print(1, 0, 0, 1, 1, 1, 1);
             break;
-        case 'F':
         case 'f':
             print(1, 0, 0, 0, 1, 1, 1);
             break;
-        case 'H':
         case 'h':
             print(0, 1, 1, 0, 1, 1, 1);
             break;
-        case 'L':
         case 'l':
             print(0, 0, 0, 1, 1, 1, 0);
             break;
-        case 'P':
         case 'p':
             print(1, 1, 0, 0, 1, 1, 1);
             break;
-        case 'Q':
         case 'q':
             print(1, 1, 1, 0, 0, 1, 1);
             break;
-        case 'U':
         case 'u':
             print(0, 1, 1, 1, 1, 1, 0);
             break;
-        case 'Y':
         case 'y':
             print(0, 1, 1, 1, 0, 1, 1);
             break;
