@@ -23,7 +23,7 @@ AdvanceSevenSegment::AdvanceSevenSegment(int a, int b, int c, int d, int e, int 
 void AdvanceSevenSegment::setNumber(int number) {
     switch (number) {
         case 0:
-            print(1, 1, 1, 0, 1, 1, 1);
+            print(1, 1, 1, 1, 1, 1, 0);
             break;
         case 1:
             print(0, 1, 1, 0, 0, 0, 0);
