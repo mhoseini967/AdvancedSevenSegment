@@ -22,40 +22,40 @@ AdvanceSevenSegment::AdvanceSevenSegment(int a, int b, int c, int d, int e, int 
 
 void AdvanceSevenSegment::setNumber(int number) {
     switch (number) {
-        case 0:
-            print(1, 1, 1, 1, 1, 1, 0);
-            break;
-        case 1:
-            print(0, 1, 1, 0, 0, 0, 0);
-            break;
-        case 2:
-            print(1, 1, 0, 1, 1, 0, 1);
-            break;
-        case 3:
-            print(1, 1, 1, 1, 0, 0, 1);
-            break;
-        case 4:
-            print(0, 1, 1, 0, 0, 1, 1);
-            break;
-        case 5:
-            print(1, 0, 1, 1, 0, 1, 1);
-            break;
-        case 6:
-            print(1, 0, 1, 1, 1, 1, 1);
-            break;
-        case 7:
-            print(1, 1, 1, 0, 0, 0, 0);
-            break;
-        case 8:
-            print(1, 1, 1, 1, 1, 1, 1);
-            break;
-        case 9:
-            print(1, 1, 1, 1, 0, 1, 1);
-            break;
+    case 0:
+        print(1, 1, 1, 1, 1, 1, 0);
+        break;
+    case 1:
+        print(0, 1, 1, 0, 0, 0, 0);
+        break;
+    case 2:
+        print(1, 1, 0, 1, 1, 0, 1);
+        break;
+    case 3:
+        print(1, 1, 1, 1, 0, 0, 1);
+        break;
+    case 4:
+        print(0, 1, 1, 0, 0, 1, 1);
+        break;
+    case 5:
+        print(1, 0, 1, 1, 0, 1, 1);
+        break;
+    case 6:
+        print(1, 0, 1, 1, 1, 1, 1);
+        break;
+    case 7:
+        print(1, 1, 1, 0, 0, 0, 0);
+        break;
+    case 8:
+        print(1, 1, 1, 1, 1, 1, 1);
+        break;
+    case 9:
+        print(1, 1, 1, 1, 0, 1, 1);
+        break;
 
-            // for unknown number display dash
-        default:
-            setDash();
+        // for unknown number display dash
+    default:
+        setDash();
 
     }
 
@@ -66,63 +66,63 @@ void AdvanceSevenSegment::setCharacter(char c) {
     c = tolower(c);
 
     switch (c) {
-        case 'a':
-            print(1, 1, 1, 0, 1, 1, 1);
-            break;
-        case 'b':
-            print(0,0,1,1,1,1,1);
-            break;
-        case 'c':
-            print(1, 0, 0, 1, 1, 1, 0);
-            break;
-        case 'd':
-            print(0,1,1,1,1,0,1);
-            break;
-        case 'e':
-            print(1, 0, 0, 1, 1, 1, 1);
-            break;
-        case 'f':
-            print(1, 0, 0, 0, 1, 1, 1);
-            break;
-        case 'h':
-            print(0, 1, 1, 0, 1, 1, 1);
-            break;
-        case 'l':
-            print(0, 0, 0, 1, 1, 1, 0);
-            break;
-        case 'p':
-            print(1, 1, 0, 0, 1, 1, 1);
-            break;
-        case 'q':
-            print(1, 1, 1, 0, 0, 1, 1);
-            break;
-        case 'u':
-            print(0, 1, 1, 1, 1, 1, 0);
-            break;
-        case 'y':
-            print(0, 1, 1, 1, 0, 1, 1);
-            break;
+    case 'a':
+        print(1, 1, 1, 0, 1, 1, 1);
+        break;
+    case 'b':
+        print(0, 0, 1, 1, 1, 1, 1);
+        break;
+    case 'c':
+        print(1, 0, 0, 1, 1, 1, 0);
+        break;
+    case 'd':
+        print(0, 1, 1, 1, 1, 0, 1);
+        break;
+    case 'e':
+        print(1, 0, 0, 1, 1, 1, 1);
+        break;
+    case 'f':
+        print(1, 0, 0, 0, 1, 1, 1);
+        break;
+    case 'h':
+        print(0, 1, 1, 0, 1, 1, 1);
+        break;
+    case 'l':
+        print(0, 0, 0, 1, 1, 1, 0);
+        break;
+    case 'p':
+        print(1, 1, 0, 0, 1, 1, 1);
+        break;
+    case 'q':
+        print(1, 1, 1, 0, 0, 1, 1);
+        break;
+    case 'u':
+        print(0, 1, 1, 1, 1, 1, 0);
+        break;
+    case 'y':
+        print(0, 1, 1, 1, 0, 1, 1);
+        break;
 
-            // for unknown character print dash
-        default:
-            setDash();
+        // for unknown character print dash
+    default:
+        setDash();
     }
 
 }
 
 void AdvanceSevenSegment::print(int a, int b, int c, int d, int e, int f, int g) {
-    digitalWrite(_a, a);
-    digitalWrite(_b, b);
-    digitalWrite(_c, c);
-    digitalWrite(_d, d);
-    digitalWrite(_e, e);
-    digitalWrite(_f, f);
-    digitalWrite(_g, g);
+    digitalWrite(_a, !a);
+    digitalWrite(_b, !b);
+    digitalWrite(_c, !c);
+    digitalWrite(_d, !d);
+    digitalWrite(_e, !e);
+    digitalWrite(_f, !f);
+    digitalWrite(_g, !g);
 
 }
 
 void AdvanceSevenSegment::setDot(int state) {
-    digitalWrite(_dot, state);
+    digitalWrite(_dot, !state);
 }
 
 void AdvanceSevenSegment::setDash() {
