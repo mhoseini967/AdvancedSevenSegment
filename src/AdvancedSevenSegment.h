@@ -2,11 +2,13 @@
 #define AdvanceSevenSegment_H
 #include "Arduino.h"
 
+
+
 class AdvanceSevenSegment {
 
 public:
-    //first pins setup
-    explicit AdvanceSevenSegment(int a, int b, int c, int d, int e, int f, int g, int dot);
+    //first pins and type setup
+    explicit AdvanceSevenSegment(bool type, int a, int b, int c, int d, int e, int f, int g, int dot);
 
     //for display numbers[0..9] use this function
     void setNumber(int number);
@@ -24,7 +26,7 @@ public:
     //display center dash
     void setDash();
 
-    //clean and show dot for (default: 1500 ms)
+    //clean and show dot for (default: 1000 ms)
     void refresh(int ms = 1000);
 
     //set LOW for all pins
@@ -32,6 +34,7 @@ public:
 
 private:
     int _a, _b, _c, _d, _e, _f, _g, _dot;
+    bool type;
 
 };
 #endif
